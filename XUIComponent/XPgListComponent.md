@@ -63,4 +63,22 @@
 - Specifies the parent injector for the custom injector.
 - This ensures dependencies already available in the parent injector can still be resolved
 
+  ### XpgListPageConfig Properties🧩
+
+| **Property**         | **Type**                      | **Function**                                                                                     |
+|-----------------------|-------------------------------|--------------------------------------------------------------------------------------------------|
+| `entityName`          | `string`                     | Name of the entity to be displayed or managed.                                                  |
+| `headerRight`         | `TemplateRef<any>`           | A template reference for custom content in the header's right section.                          |
+| `actions`             | `TemplateRef<any>[]`         | Array of template references for custom actions in the component.                               |
+| `headerTemplate`      | `TemplateRef<any>[]`         | Array of template references for custom header content.                                         |
+| `onInit`              | `(list: ListService<PagedRequestDto>, instance?: any) => void` | Callback executed when the component initializes.                                               |
+| `columns`             | `Property[]`                | List of column configurations for the displayed data.                                           |
+| `pageAction`          | `PageActionDto`              | Configuration for actions performed on the page (e.g., navigation or API calls).                |
+| `staticFilter`        | `string`                     | Static filter applied to the data being displayed.                                              |
+| `path`                | `string`                     | Path or endpoint for the data source.                                                           |
+| `pageParams`          | `PageParams`                 | Parameters passed to the page, such as pagination or filters.                                   |
+| `additionalData`      | `string`                     | Additional data or metadata required for the page.                                              |
+| `enableCheckBox`      | `boolean`                    | Determines whether checkboxes are enabled for item selection.                                   |
+| `onSelect`            | `(selectedItems: ItemEntityDto[]) => void` | Callback executed when items are selected.                                                      |
+| `betaList`            | `boolean`                    | Indicates if the list is in beta mode (optional feature).                                        |
 
